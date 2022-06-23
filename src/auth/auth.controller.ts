@@ -19,7 +19,7 @@ import { ViewAuthFilter } from './auth.filter';
 export class AuthController {
   constructor(private readonly authService: AuthService) {}
 
-  @Get('login')
+  @Get(['login', '/'])
   getLogin(@Res() res: Response) {
     res.render('login.hbs');
   }
@@ -30,8 +30,12 @@ export class AuthController {
   }
 
   @Post('register')
-  async register(@Body() userData: UserDto): Promise<any> {
-    return await this.authService.register(userData.email, userData.password);
+  async register(
+    @Body() userData: UserDto,
+    @Res() res: Response,
+  ): Promise<any> {
+    await this.authService.register(userData.email, userData.password);
+    res.redirect('/auth/login');
   }
 
   @Post('login')

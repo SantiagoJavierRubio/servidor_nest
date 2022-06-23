@@ -2,13 +2,15 @@
 <html lang="en">
 {{> head }}
 <body>
-    <section id="despedida">
-        <h2>Hasta luego, {{username}}</h2>
-    </section>
-    <script >
-        setTimeout(() => {
-            window.location.href = '/auth/login'
-        }, 2000)
-    </script>
+    <div class="container">
+        <section id="despedida">
+            <h2>Hasta luego, {{username}}</h2>
+        </section>
+        <script >
+            setTimeout(() => {
+                window.location.href = '/auth/login'
+            }, 2000)
+        </script>
+    </div>
 </body>
 </html>
