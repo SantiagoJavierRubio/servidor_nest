@@ -2,8 +2,8 @@ import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Mensajes, MensajesDocument } from './mensajes.schema';
 import { Model } from 'mongoose';
-import { CreateMensajeDto } from 'src/dto/create-mensaje.dto';
-import { ReturnMensajeDto } from 'src/dto/return-mensaje.dto';
+import { CreateMensajeDto } from '../dto/create-mensaje.dto';
+import { ReturnMensajeDto } from '../dto/return-mensaje.dto';
 
 @Injectable()
 export class MensajesService {

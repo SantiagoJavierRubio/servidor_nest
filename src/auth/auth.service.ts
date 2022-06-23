@@ -1,6 +1,6 @@
 import { Injectable, HttpException } from '@nestjs/common';
-import { UsersService } from 'src/users/users.service';
-import { checkPassword } from 'src/utils/passwordEncrypt.util';
+import { UsersService } from '../users/users.service';
+import { checkPassword } from '../utils/passwordEncrypt.util';
 
 @Injectable()
 export class AuthService {

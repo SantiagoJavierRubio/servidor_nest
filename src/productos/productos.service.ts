@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Producto, ProductoDocument } from './productos.schema';
 import { Model } from 'mongoose';
-import { ReturnProductDto } from 'src/dto/return-product.dto';
+import { ReturnProductDto } from '../dto/return-product.dto';
 
 @Injectable()
 export class ProductosService {

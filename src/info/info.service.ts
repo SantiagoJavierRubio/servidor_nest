@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { InfoDto } from 'src/dto/info.dto';
+import { InfoDto } from '../dto/info.dto';
 import * as os from 'os';
 
 @Injectable()

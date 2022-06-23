@@ -7,7 +7,7 @@ import {
   Put,
   Delete,
 } from '@nestjs/common';
-import { CreateProductDto } from 'src/dto/create-product.dto';
+import { CreateProductDto } from '../dto/create-product.dto';
 import { ProductosService } from './productos.service';
 
 @Controller('productos')
